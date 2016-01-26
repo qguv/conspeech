@@ -32,7 +32,8 @@ if len(sys.argv) >= 3:
     
 
 # Dataset from http://www.cs.cornell.edu/home/llee/data/convote.html
-PATH_TO_DATA = 'convote_v1.1\data_stage_three'
+CURRENT_PATH = os.path.dirname(os.path.abspath(__file__))
+PATH_TO_DATA = os.path.join(CURRENT_PATH, "convote_v1.1", "data_stage_three")
 TRAIN_DIR = os.path.join(PATH_TO_DATA, "training_set")
 TEST_DIR = os.path.join(PATH_TO_DATA, "test_set")
 DEV_DIR = os.path.join(PATH_TO_DATA, "development_set")
